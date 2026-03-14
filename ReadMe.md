@@ -1,3 +1,5 @@
+:::writing{variant=“standard” id=“18462”}
+
 # March Madness Bracket Optimization Model
 
 ## Overview
