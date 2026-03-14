@@ -41,9 +41,9 @@ Lower seeds (e.g., 1-seeds) represent stronger teams.
 
 We define team strength as:
 
-[
+$$
 S_i = \frac{1}{s_i^\alpha}
-]
+$$
 
 Where:
 
