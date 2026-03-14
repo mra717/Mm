@@ -67,15 +67,15 @@ Game outcomes follow a **logistic model** similar to the Bradley–Terry paired 
 
 For teams (i) and (j):
 
-[
+$$
 P(i > j) =
 \frac{1}{1+\exp[-(k(\log S_i-\log S_j)+\gamma_r)]}
-]
+$$
 
 Where:
 
 * (k) = slope parameter controlling upset frequency
-* (\gamma_r) = round-specific adjustment
+* ($\gamma_r$) = round-specific adjustment
 * (r) = tournament round
 
 ### Round Effects
@@ -84,9 +84,9 @@ Tournament rounds differ structurally. Early rounds include large seed mismatche
 
 To capture this we introduce:
 
-[
+$
 \gamma_r
-]
+$
 
 for each round (r).
 
@@ -103,9 +103,9 @@ Example interpretation:
 
 The parameters
 
-* ( \alpha )
+* ( $\alpha$ )
 * ( k )
-* ( \gamma_1 \dots \gamma_6 )
+* ( $\gamma_1 \dots \gamma_6$ )
 
 are estimated from historical tournament games.
 
@@ -118,10 +118,10 @@ The model predicts a probability (p) that team A wins.
 
 The likelihood contribution is:
 
-[
+$
 L =
 p^{y}(1-p)^{1-y}
-]
+$
 
 where
 
@@ -130,10 +130,10 @@ where
 
 The log-likelihood becomes:
 
-[
+$
 \log L =
 y\log(p)+(1-y)\log(1-p)
-]
+$
 
 We estimate parameters by minimizing the **negative log likelihood** across all historical games.
 
@@ -203,9 +203,9 @@ Typical ESPN scoring:
 
 We therefore solve:
 
-[
+$$
 \max_B E[\text{Score}(B)]
-]
+$$
 
 Where:
 
@@ -347,7 +347,7 @@ Model how other participants fill out brackets to maximize **probability of winn
 
 ### Bayesian Parameter Estimation
 
-Estimate distributions for ( \alpha ) and ( k ) instead of point estimates.
+Estimate distributions for ( $\alpha$ ) and ( k ) instead of point estimates.
 
 ### Vectorized Simulation
 
